@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .alert {
+      padding: 20px;
+      background-color: #f87021;
+      color: white;
+    }
+    
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .closebtn:hover {
+      color: black;
+    }
+    .avatar {
+        vertical-align: middle;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .container {
+        height: 280px;
+        position: relative;
+        border: none;
+    }
+    .btn {
+      border: none;
+      color: #000000;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #f3a368;
+      font-family: Papyrus;
+    }
+    .row {
+        display: flex;
+    }
+    
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+    }
+</style>
+<body style="font-family:Papyrus;background-color:#ffc28e;">
+    <div class="container">
+        <div class="center">
+            <img src="images/bin.jpg" alt="Avatar" class="avatar">
+            <h3>Bin L.</h3>
+        </div>
+    </div><br>
+    <div>
+        <strong>Preferences</strong>: 
+        <div class="row">
+            <div class="column">
+                <button class="btn">Beginner</button>
+            </div>
+            <div class="column">
+                <button class="btn">0.5 - 1 mile</button>
+            </div>
+            <div class="column">
+                <button class="btn">less than 50ft</button>
+            </div>
+        </div>
+        <strong>Recent Hikes:</strong>
+        <button class="btn">ILL Trail</button>
+    </div>
+    <Strong>Pirctures:</Strong>
+    <div class="row">
+        <div class="column">
+            <img src="images/bg1.webp" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="images/pexels-photo-238622.jpeg" style="width:100%">
+        </div>
+    </div>
+    <a href="index.html">
+        <img src="images/home.png" width="60" height="60">
+    </a>
+</body>
+</html>

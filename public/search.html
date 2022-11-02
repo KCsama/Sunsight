@@ -1,0 +1,172 @@
+<!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- let's link to our stylesheet (found in public/css/styles.css)-->
+<link rel="stylesheet" type="text/css" href="/css/styles.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    .bg {
+        /* The image used */
+        background-image: url("images/bg3.jpeg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* Style the search field */
+    form.search input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #fc9d45;
+    }
+  
+    /* Style the submit button */
+    form.search button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #fc9d45;
+      color: rgb(255, 255, 255);
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none; /* Prevent double borders */
+      cursor: pointer;
+    }
+  
+    form.search button:hover {
+      background: #f88316;
+    }
+  
+    /* Clear floats */
+    form.search::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .row {
+      display: flex;
+    }
+  
+    .column {
+      flex: 33.33%;
+      padding: 5px;
+    }
+    .btn {
+      border: none;
+      color: #000000;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #f3a368;
+      font-family: Papyrus;
+    }
+    .btn:hover {background: #e68a00;}
+  </style>
+<!-- you can also specify styles straight in html! Let's use Arial and gray text on this page.-->
+<body style="font-family:Papyrus;background-color:#ffc28e;" class="bg">
+<div style="padding:15px;text-align:center;"> 
+  <h1>Search Filter</h1>
+</div>
+  <form class="search">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</div>
+<div class = buttons>
+    <strong>Location</strong><br>
+    <div class="row">
+        <div class="column">
+            <button class="btn">Los Angeles</button>
+        </div>
+        <div class="column">
+            <button class="btn">San Jose</button>
+        </div>
+        <div class="column">
+            <button class="btn">San Diego</button>
+        </div>
+        <div class="column">
+            <button class="btn">Big Bear</button>
+        </div>
+    </div>
+    <br><strong>Length</strong><br>
+    <div class="row">
+        <div class="column">
+            <button class="btn"> less than 0.5 mile</button>
+        </div>
+        <div class="column">
+            <button class="btn">0.5 - 1 mile</button>
+        </div>
+        <div class="column">
+            <button class="btn">1 - 1.5 mile</button>
+        </div>
+        <div class="column">
+            <button class="btn">1.5 - 2 mile</button>
+        </div>
+    </div>
+    <br><strong>Elevation</strong><br>
+    <div class="row">
+        <div class="column">
+            <button class="btn"> less than 50ft</button>
+        </div>
+        <div class="column">
+            <button class="btn">50 - 100ft</button>
+        </div>
+        <div class="column">
+            <button class="btn">100 - 150ft</button>
+        </div>
+        <div class="column">
+            <button class="btn">150 - 200ft</button>
+        </div>
+    </div>
+    <br><strong>Difficulty</strong><br>
+    <div class="row">
+        <div class="column">
+            <button class="btn">Beginner</button>
+        </div>
+        <div class="column">
+            <button class="btn">Intermediate</button>
+        </div>
+        <div class="column">
+            <button class="btn">Advanced</button>
+        </div>
+        <div class="column">
+            <button class="btn">Master</button>
+        </div>
+    </div>
+    <br><strong>Most Searched Trails</strong><br>
+    <div class="row">
+      <div class="column">
+        <a href="mouse.html"><img src="images/istockphoto-1141196125-612x612.jpg" style="width:100%"></a>
+        <div class="caption" style = "font-size: 12px;text-align:center;">Mouse King Trail</div>
+      </div>
+      <div class="column">
+        <img src="images/istockphoto-473954724-612x612.jpg" style="width:100%">
+        <div class="caption" style = "font-size: 12px;text-align:center;">Cheese Trail</div>
+      </div>
+      <div class="column">
+        <img src="images/istockphoto-611620630-612x612.jpg" style="width:100%">
+        <div class="caption" style = "font-size: 12px;text-align:center;">ILL Trail</div>
+      </div>
+    </div>
+</div>
+<a href="index.html">
+    <img src="images/home.png" width="60" height="60">
+</a>
+
+</body>
+</html>
+

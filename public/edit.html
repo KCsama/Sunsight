@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    /* Style the search field */
+    form.search input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #fc9d45;
+    }
+    
+    /* Style the submit button */
+    form.search button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #fc9d45;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+    }
+    
+    form.search button:hover {
+        background: #f88316;
+    }
+    
+    /* Clear floats */
+    form.search::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .row {
+        display: flex;
+    }
+    
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+    }
+    .container {
+        width: 320px;
+        padding: 5px;
+        border: 2px solid rgb(63, 35, 2);
+        margin: 0;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        background-color:#f88316;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 16px;
+     }
+
+    th:first-child, td:first-child {
+        text-align: left;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+    .fa-check {
+        color: green;
+    }
+
+    .fa-remove {
+        color: red;
+    }
+</style>
+<body style="font-family:Papyrus;background-color:#ffc28e;padding: auto;">
+<strong style = "font-size: 20px;"> Day of Fun</strong><br><br>
+<a href="mouse.html"> MouseTrail Added</a><br>
+Similar Trail:<br>
+<table>
+    <tr>
+      <th style="width:50%">Features</th>
+      <th>Mouse King Trail</th>
+      <th>Cheese Trail</th>
+    </tr>
+    <tr>
+      <td>Elevation</td>
+      <td>10 ft</td>
+      <td>5 ft</td>
+    </tr>
+    <tr>
+      <td>Length</td>
+      <td>0.55 mile</td>
+      <td>0.8 mile</td>
+    </tr>
+    <tr>
+      <td>Difficulty</td>
+      <td>Beginner</td>
+      <td>Beginner</td>
+    </tr>
+    <tr>
+      <td>Nearby Attractions?</td>
+      <td><i class="fa fa-check"></i></td>
+      <td><i class="fa fa-remove"></i></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>+</button></td>
+      <td><button>+</button></i></td>
+    </tr>
+  </table>
+<p style = "font-size: 15px;">1. 9:00AM meet up at <a href="mouse.html">Mouse King Trail</a><br>
+    2. 9.30AM Start walking.<br>
+    3. 11.00AM Lunch Break. YAY!
+</p>
+<a href="index.html">
+    <img src="images/home.png" width="60" height="60">
+</a>
+</body>
+</html>

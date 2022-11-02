@@ -1,0 +1,157 @@
+<!-- Referenced: https://www.w3schools.com/html/html_responsive.asp
+https://www.w3schools.com/howto/howto_css_search_button.asp
+https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  /* Style the search field */
+  form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #fc9d45;
+  }
+
+  /* Style the submit button */
+  form.search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #fc9d45;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+  form.search button:hover {
+    background: #f88316;
+  }
+
+  /* Clear floats */
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  .container {
+    width: 320px;
+    padding: 5px;
+    border: 2px solid rgb(63, 35, 2);
+    margin: 1;
+    background-color: #ffc28e;
+  }
+  .bg {
+        /* The image used */
+        background-image: url("images/bg1.webp");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
+<body style="font-family:Papyrus;background-color:#ffc28e;">
+<div style="padding:15px;text-align:center;">
+  <img src = "images/3E5506BC-73BA-4EB3-A116-74B85FED9C2F.png"/>
+  <!-- Load icon library -->
+<!-- The form -->
+</div>
+<div class = "bg">
+<form class="search">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+  <a href="search.html">
+    <button type = "button">
+    Filter 
+    </button>
+  </a>
+</form>
+<div style="font-size: 17px;">
+  <div class="suggestions">
+    <br>
+    <strong>Strongly Recommend</strong>
+    <br>
+    <div class="row">
+      <div class="column">
+        <a href="mouse.html"><img src="images/istockphoto-1141196125-612x612.jpg" style="width:100%"></a>
+        <div class="caption" style = "font-size: 12px;text-align:center;">Mouse King Trail</div>
+      </div>
+      <div class="column">
+        <img src="images/istockphoto-473954724-612x612.jpg" style="width:100%">
+        <div class="caption" style = "font-size: 12px;text-align:center;">Cheese Trail</div>
+      </div>
+      <div class="column">
+        <img src="images/istockphoto-611620630-612x612.jpg" style="width:100%">
+        <div class="caption" style = "font-size: 12px;text-align:center;">ILL Trail</div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "plans">
+    <br>
+    <strong>Plans</strong>
+    <br>
+    <div class = "row">
+      <div class="column">
+        <div class = "container">
+          <p style = "text-align: right;">June 28th, 2022</p><br>
+          <p style = "text-align: left;font-size: 17;"><em>Day of Fun</em></p>
+        </div>
+      </div> 
+      <div class = "column" >
+        <a href="edit.html"><img src="images/edit.png" width = "60" height= "60"></a>
+      </div>  
+    </div>
+    <a href="plan.html"><img src="images/more.png" width = "60" height= "60"></a>
+  </div>
+</div>
+<div>
+  <br><strong>Views Near You</strong><br>
+  <div class="row">
+    <div class="column">
+      <img src="images/view1.jpeg" style="width:100%">
+      <div class="caption" style = "font-size: 12px;text-align:center;color: beige">Yosemite WaterFall</div>
+    </div>
+    <div class="column">
+      <img src="images/pexels-photo-238622.jpeg" style="width:100%">
+      <div class="caption" style = "font-size: 12px;text-align:center;color: beige">Angel Pond</div>
+    </div>
+    <div class="column">
+      <img src="images/views2.jpeg" style="width:100%">
+      <div class="caption" style = "font-size: 12px;text-align:center;color: beige;">Funny Train Rail</div>
+    </div>
+  </div>
+  <div class = "column">
+    <a href="user.html"><img src = "images/user.png" width="60" height="60"></a>
+    <a href="map.html"><img src = "images/map.png" width = "60" height = "60"></a>
+  </div>
+</div>
+</div>
+</body>
+</html>

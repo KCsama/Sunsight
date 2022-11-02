@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        background-color:#f88316;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 16px;
+    }
+
+    th:first-child, td:first-child {
+        text-align: left;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+    .fa-check {
+        color: green;
+    }
+
+    .fa-remove {
+        color: red;
+    }
+    .btn {
+      border: none;
+      color: #000000;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #f3a368;
+      font-family: Papyrus;
+    }
+    .btn:hover {background: #e68a00;}
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .container {
+        height: 28px;
+        position: relative;
+        border: none;
+    }
+</style>
+<body style="font-family:Papyrus;background-color:#ffc28e;">
+    <h2> Cheese Trail </h2>
+    <table>
+        <tr>
+            <th style="width:50%">Features</th>
+            <th>Mouse King Trail</th>
+            <th>Cheese Trail</th>
+        </tr>
+        <tr>
+            <td>Elevation</td>
+            <td>10 ft</td>
+            <td>5 ft</td>
+        </tr>
+        <tr>
+            <td>Length</td>
+            <td>0.55 mile</td>
+            <td>0.8 mile</td>
+        </tr>
+        <tr>
+            <td>Difficulty</td>
+            <td>Beginner</td>
+            <td>Beginner</td>
+        </tr>
+        <tr>
+            <td>Nearby Attractions?</td>
+            <td><i class="fa fa-check"></i></td>
+            <td><i class="fa fa-remove"></i></td>
+        </tr>
+        <tr>
+            <td>Picture</td>
+            <td><img src="images/istockphoto-1141196125-612x612.jpg" style="width:100%"></td>
+            <td><img src="images/istockphoto-473954724-612x612.jpg" style="width:100%"></td>
+        </tr>
+    </table>
+<br>
+<div class="container">
+    <div class="center">
+        <button class = "btn">Switch</button>
+    </div>
+</div><br>
+<a href="index.html">
+    <img src="images/home.png" width="60" height="60">
+</a>
+</body>
+</html>

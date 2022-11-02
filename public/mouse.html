@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    /* Style the search field */
+    form.search input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #fc9d45;
+    }
+    
+    /* Style the submit button */
+    form.search button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #fc9d45;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+    }
+    
+    form.search button:hover {
+        background: #f88316;
+    }
+    
+    /* Clear floats */
+    form.search::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .row {
+        display: flex;
+    }
+    
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+    }
+    .container {
+        width: 160px;
+        padding: 5px;
+        border: 2px solid rgb(63, 35, 2);
+        margin: 1;
+    }
+</style>
+<body style="font-family:Papyrus;background-color:#ffc28e;font-size: 17px;">
+<div>
+    <div class="row">
+        <div class="column">
+          <h2>Mouse King Trail</h2>
+        </div>
+        <div class="column">
+          <img src="images/plan.png" width ="60" height="60"/>
+        </div>
+    </div>
+    <strong>Description</strong>
+    <p style="font-size:15px;">
+    The Mouse Trail is also known as the John Muir Trail. 
+    The John Muir Trail passes through what many backpackers say 
+    is the finest mountain scenery in the United States. This is 
+    a land of 13,000-foot and 14,000-foot peaks, of lakes in the 
+    thousands, and of canyons and granite cliffs. The John Muir Trail 
+    is also a land blessed with the mildest, sunniest climate of any 
+    major mountain range in the world.
+    </p>
+    <p><strong>Length:</strong> 0.55 mile</p>
+    <p><strong>Elevation:</strong> 10 ft</p>
+    <p><strong>Difficulty:</strong> Beginner</p>
+    <p><strong>Reviews:</strong></p>
+    <div class="row">
+        <div class="column">
+            <div class = "container">
+                <p style = "text-align: right;">Amy  ★★★★</p>
+                <p>Really Nice Place.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class = "container">
+                <p style = "text-align: right;">Bin  ★★★★</p>
+                <p>Nice views.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class = "container">
+                <p style = "text-align: right;">Kevin  ★★★★★</p>
+                <p>Took a lot of beautiful pictures.</p>
+            </div>
+        </div>
+    </div>
+    <p><strong>Picture:</strong></p>
+    <div class="row">
+        <div class="column">
+          <img src="images/view1.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="images/pexels-photo-238622.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="images/views2.jpeg" style="width:100%">
+        </div>
+    </div>
+    <a href="index.html">
+        <img src="images/home.png" width="60" height="60">
+    </a>   
+</div>
+</body>
+</html>
